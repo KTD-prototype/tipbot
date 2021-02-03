@@ -16,8 +16,8 @@ int highpower_pin = 7; //switch to drive motor in high mode
 void setup() {
   Serial.begin(115200); //begin serial com with host PC
 
-  pinMode(lowpower_pin, INPUT);
-  pinMode(highpower_pin, INPUT);
+  pinMode(lowpower_pin, INPUT); // switch #1
+  pinMode(highpower_pin, INPUT); // switch #2
 
   throttle.attach(9); //set the pin#9 as a PWM output
   //  esc_calibration(); // ESC calibration process (only needed at 1st time just after purchasing new ESC ? )
